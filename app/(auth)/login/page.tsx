@@ -1,12 +1,13 @@
-import { LoginForm } from "@/components/auth/login-form";
-import { AuthCard } from "@/components/auth/auth-card";
-import { LogIn } from "lucide-react";
-import { FlashAlert } from "@/components/common/FlashAlertServer";
+import { LoginForm } from '@/components/auth/login-form';
+import { AuthCard } from '@/components/auth/auth-card';
+import { LogIn } from 'lucide-react';
+import { FlashAlert } from '@/components/common/FlashAlertServer';
 
-import { Metadata } from "next";
+import { Metadata } from 'next';
+import { SITE_NAME } from '@/global/constants';
 
 export const metadata: Metadata = {
-  title: "Login Page",
+  title: `${SITE_NAME} | Login `,
 };
 export default function LoginPage() {
   return (
